@@ -6,7 +6,7 @@ class FilterableEventList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filterText: '1'
+      filterText: ''
     };
     this.filterTextChanged = this.filterTextChanged.bind(this);
   }
@@ -30,4 +30,5 @@ class FilterableEventList extends React.Component {
     );
   }
 }
- export default FilterableEventList;
+
+export default FilterableEventList;
