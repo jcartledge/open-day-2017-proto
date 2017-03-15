@@ -2,18 +2,9 @@ import React from 'react';
 import FilterForm from './FilterForm';
 import EventList from './EventList';
 
-class FilterableEventList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      filterText: ''
-    };
-    this.filterTextChanged = this.filterTextChanged.bind(this);
-  }
-
-  filterTextChanged(filterText) {
-    this.setState({filterText});
-  }
+export default class FilterableEventList extends React.Component {
+  state = {filterText: ''}
+  filterTextChanged = (filterText) => this.setState({filterText});
 
   render() {
     return (
@@ -30,5 +21,3 @@ class FilterableEventList extends React.Component {
     );
   }
 }
-
-export default FilterableEventList;

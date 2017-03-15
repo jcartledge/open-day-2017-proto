@@ -1,14 +1,7 @@
 import React from 'react';
 
-class FilterForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.filterTextChanged = this.filterTextChanged.bind(this);
-  }
-
-  filterTextChanged() {
-    this.props.filterTextChanged(this.filter.value);
-  }
+export default class FilterForm extends React.Component {
+  filterTextChanged = _ => this.props.filterTextChanged(this.filter.value);
 
   render() {
     return (
@@ -24,4 +17,3 @@ class FilterForm extends React.Component {
     );
   }
 }
-export default FilterForm;

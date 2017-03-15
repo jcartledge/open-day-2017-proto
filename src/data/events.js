@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-const size = 200;
+const size = 1000;
 const events = Array(size).fill(0).map(fakeEvent);
 
 function fakeEvent () {
